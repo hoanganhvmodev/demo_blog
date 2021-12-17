@@ -1,0 +1,109 @@
+{
+    "info": {
+        "_postman_id": "26e242a8-8d59-495a-a3b1-4906ea39b616",
+        "name": "blog",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [{
+            "name": "localhost:3000/blog/create",
+            "request": {
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [{
+                        "key": "token",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMwMTY1NzMyLWE1YmYtNDg4NC1hYjIzLTgyZWRkMGY2NTQyOSIsInVzZXJOYW1lIjoiYiIsInBhc3NXb3JkIjoiJDJiJDEwJEJIaURQeWtYY3ljN2xJblNpMDhHR2VEMU92UE5BN2h3dVptUVRHMzk3T29KN2pSNmhHZDEuIiwiZW1haWwiOiJhQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImNyZWF0ZWRBdCI6IjIwMjItMDEtMTBUMDg6NTM6MDMuNDA1WiIsInVwZGF0ZWRBdCI6IjIwMjItMDEtMTBUMDg6NTk6NDIuMjQwWiIsImlhdCI6MTY0MTgwNjk2MywiZXhwIjoxNjQxODEwNTYzfQ.X84uA64cUJO1UY1CEBtJVF5LHtC4QXeRQxYuOm-Of6o",
+                        "type": "string"
+                    }]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"blogName\":\"a\",\r\n    \"comments\":\"a\",\r\n    \"userId\":\"3da0ba4c-69ca-48aa-9f11-6613247db9c7\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "localhost:3000/blog/create",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "blog",
+                        "create"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "localhost:3000/blog/update/d262671b-9b7a-456b-8c6b-f04005b45bbc",
+            "request": {
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [{
+                        "key": "token",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMwMTY1NzMyLWE1YmYtNDg4NC1hYjIzLTgyZWRkMGY2NTQyOSIsInVzZXJOYW1lIjoiYiIsInBhc3NXb3JkIjoiJDJiJDEwJEJIaURQeWtYY3ljN2xJblNpMDhHR2VEMU92UE5BN2h3dVptUVRHMzk3T29KN2pSNmhHZDEuIiwiZW1haWwiOiJhQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImNyZWF0ZWRBdCI6IjIwMjItMDEtMTBUMDg6NTM6MDMuNDA1WiIsInVwZGF0ZWRBdCI6IjIwMjItMDEtMTBUMDg6NTk6NDIuMjQwWiIsImlhdCI6MTY0MTgwNjk2MywiZXhwIjoxNjQxODEwNTYzfQ.X84uA64cUJO1UY1CEBtJVF5LHtC4QXeRQxYuOm-Of6o",
+                        "type": "string"
+                    }]
+                },
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"comments\":\"hello boy\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "localhost:3000/blog/update/d262671b-9b7a-456b-8c6b-f04005b45bbc",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "blog",
+                        "update",
+                        "d262671b-9b7a-456b-8c6b-f04005b45bbc"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "localhost:3000/blog/delete/d262671b-9b7a-456b-8c6b-f04005b45bbc",
+            "request": {
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [{
+                        "key": "token",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMwMTY1NzMyLWE1YmYtNDg4NC1hYjIzLTgyZWRkMGY2NTQyOSIsInVzZXJOYW1lIjoiYiIsInBhc3NXb3JkIjoiJDJiJDEwJEJIaURQeWtYY3ljN2xJblNpMDhHR2VEMU92UE5BN2h3dVptUVRHMzk3T29KN2pSNmhHZDEuIiwiZW1haWwiOiJhQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImNyZWF0ZWRBdCI6IjIwMjItMDEtMTBUMDg6NTM6MDMuNDA1WiIsInVwZGF0ZWRBdCI6IjIwMjItMDEtMTBUMDg6NTk6NDIuMjQwWiIsImlhdCI6MTY0MTgwNjk2MywiZXhwIjoxNjQxODEwNTYzfQ.X84uA64cUJO1UY1CEBtJVF5LHtC4QXeRQxYuOm-Of6o",
+                        "type": "string"
+                    }]
+                },
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "localhost:3000/blog/delete/d262671b-9b7a-456b-8c6b-f04005b45bbc",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "blog",
+                        "delete",
+                        "d262671b-9b7a-456b-8c6b-f04005b45bbc"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
