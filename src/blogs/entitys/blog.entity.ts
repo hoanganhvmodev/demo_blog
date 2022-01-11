@@ -10,9 +10,18 @@ export class BlogEntity  extends BaseEntity{
     blogName: string;
 
     @Column()
-    comments: string;
+    title: string;
 
     
+    @Column()
+    content: string;
+
+    @Column()
+    comments: string;
+
+    @Column()
+    images: string;
+
     @ManyToOne(() => UserEntity, user => user.blogs)
     user: UserEntity
 

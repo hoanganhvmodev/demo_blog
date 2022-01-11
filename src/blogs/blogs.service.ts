@@ -19,11 +19,7 @@ export class BlogsService {
     async createBlog(
       body: CreateBlogDto,
     ): Promise<BlogEntity> {
-      const blog = new CreateBlogDto();
-      blog.blogName = body.blogName;
-      blog.comments = body.comments;
-      blog.userId = body.userId;
-      return await this.blogsRepository.save(blog);
+      return await this.blogsRepository.save(body);
     }  
 
       async updateBlog(
